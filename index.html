@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="星友祭 アンケート一覧">
+<title>星友祭｜アンケート</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Hiragino Kaku Gothic ProN",Meiryo,sans-serif}
+body{
+  color:#fff;
+  background:
+    radial-gradient(circle at 20% 15%,rgba(255,170,70,.28) 0 2px,transparent 3px),
+    radial-gradient(circle at 75% 28%,rgba(255,255,255,.75) 0 1.5px,transparent 2.5px),
+    radial-gradient(circle at 35% 70%,rgba(255,255,255,.65) 0 1.5px,transparent 2.5px),
+    radial-gradient(circle at 88% 80%,rgba(255,180,80,.55) 0 2px,transparent 3px),
+    linear-gradient(145deg,#07183f 0%,#0b3b78 48%,#071b4c 100%);
+  background-size:320px 320px,280px 280px,360px 360px,420px 420px,100% 100%;
+  overflow-x:hidden;
+}
+body:before,body:after{
+  content:"✦  ·  ✧  ·  ✦  ·  ✧  ·  ✦";
+  position:fixed;left:0;width:100%;font-size:24px;letter-spacing:20px;
+  color:rgba(255,255,255,.2);pointer-events:none;white-space:nowrap
+}
+body:before{top:9%;transform:rotate(-8deg)}
+body:after{bottom:8%;transform:rotate(7deg)}
+.container{width:min(760px,92%);margin:auto}
+.hero{text-align:center;padding:55px 0 30px}
+.logo-star{
+  width:78px;height:78px;margin:0 auto 14px;display:grid;place-items:center;
+  font-size:46px;color:#fff;
+  background:linear-gradient(135deg,#ff9b36,#ffbd62);
+  clip-path:polygon(50% 0,61% 35%,98% 36%,68% 57%,79% 94%,50% 72%,21% 94%,32% 57%,2% 36%,39% 35%);
+  filter:drop-shadow(0 7px 15px rgba(255,156,54,.35));
+}
+h1{font-size:clamp(30px,7vw,54px);margin:0;font-weight:900;letter-spacing:.06em;text-shadow:0 4px 20px rgba(0,0,0,.25)}
+.subtitle{margin:10px 0 0;font-size:15px;opacity:.9}
+.intro{
+  margin:20px auto 0;padding:17px 20px;width:100%;
+  border:1px solid rgba(255,255,255,.2);border-radius:16px;
+  background:rgba(255,255,255,.1);backdrop-filter:blur(10px);
+  line-height:1.8;font-size:14px;
+}
+.cards{display:flex;flex-direction:column;gap:18px;padding:20px 0 50px}
+.card{
+  position:relative;overflow:hidden;padding:26px;border-radius:22px;
+  background:rgba(255,255,255,.95);color:#13274c;
+  box-shadow:0 14px 35px rgba(0,0,0,.2);
+}
+.card:before{
+  content:"";position:absolute;top:0;left:0;width:100%;height:6px;
+  background:linear-gradient(90deg,#ff8f2b,#ffc15e,#2475c9)
+}
+.day{
+  display:inline-block;padding:5px 12px;border-radius:999px;
+  background:#eef5ff;color:#1263b4;font-size:13px;font-weight:800;margin-bottom:10px
+}
+.card h2{font-size:23px;margin:0 0 10px}
+.description{
+  margin:0 0 20px;padding:14px 15px;border-radius:12px;
+  background:#f5f8fc;color:#52617a;line-height:1.8;font-size:14px;
+  min-height:55px;
+}
+.button{
+  display:block;text-align:center;text-decoration:none;color:#fff;font-weight:800;
+  padding:14px 16px;border-radius:13px;
+  background:linear-gradient(135deg,#1263b4,#0b4388);
+  box-shadow:0 7px 16px rgba(11,67,136,.25);
+}
+.button:hover{filter:brightness(1.08)}
+footer{text-align:center;padding:0 0 30px;font-size:12px;opacity:.65}
+@media(max-width:650px){
+  .hero{padding-top:38px}
+  .card{padding:23px 20px}
+  .logo-star{width:68px;height:68px;font-size:40px}
+}
+</style>
+</head>
+<body>
+<main class="container">
+  <section class="hero">
+    <div class="logo-star">★</div>
+    <h1>星友祭 アンケート</h1>
+    <p class="subtitle">ご来場ありがとうございました！</p>
+    <div class="intro">
+      第61回星友祭にお越しくださりありがとうございます。<br><br>
+      皆様からいただいたご意見やご感想をもとに、今後の星友祭をさらに魅力的なものにしていきたいと考えております。お手数ですが、アンケートへのご協力お願いいたします。<br><br>
+      なお、このアンケートの回答が星友祭実行委員会広報部が企画している抽選会への参加権利となっています。アンケート回答終了後は、アンケート回答完了画面を保持しておくことと、回答終了後はすぐに抽選会への参加をお願いいたします。また、回答完了画面が抽選会への参加権利となり、画面の確認ができない場合は抽選会へ参加できません。（スクショは不正防止のためNG）<br><br>
+      また、本アンケートは抽選会への参加回数を制限するためにGoogleアカウントへのログインを必須としています。取得した情報はアンケートの集計及び回答回数制限の目的にのみ使用し、個人を特定したり、第三者へ提供したりすることはありません。ご回答いただいた情報は適切に管理し、アンケート実施後は必要な期間保存した後に削除いたします。<br><br>
+      ご理解ご協力のほど、よろしくお願いいたします。
+    </div>
+  </section>
+  <section class="cards">
+    <article class="card">
+      <div class="day">DAY 1</div>
+      <h2>1日目 アンケート</h2>
+      <div class="description">1日目にご来場いただいた方はこちらからご回答ください。</div>
+      <a class="button" href="https://forms.gle/NHabHDqQLa91yhtD7" target="_blank" rel="noopener">アンケートに回答する →</a>
+    </article>
+    <article class="card">
+      <div class="day">DAY 2</div>
+      <h2>2日目 アンケート</h2>
+      <div class="description">2日目にご来場いただいた方はこちらからご回答ください。</div>
+      <a class="button" href="https://forms.gle/dB7A3kx25vJepLja9" target="_blank" rel="noopener">アンケートに回答する →</a>
+    </article>
+    <article class="card">
+      <div class="day">DAY 3</div>
+      <h2>3日目 アンケート</h2>
+      <div class="description">3日目にご来場いただいた方はこちらからご回答ください。</div>
+      <a class="button" href="https://forms.gle/jUbeUjxng5KGyqyh9" target="_blank" rel="noopener">アンケートに回答する →</a>
+    </article>
+  </section>
+  <footer>© 星友祭広報部</footer>
+</main>
+</body>
+</html>
